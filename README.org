@@ -1,0 +1,48 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t broken-links:nil c:nil creator:nil
+#+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+OPTIONS: timestamp:t title:t toc:t todo:t |:t
+#+TITLE: README
+#+DATE: <2017-06-04 Sun>
+#+AUTHOR: Edward John Steere
+#+EMAIL: edward.steere@gmail.com
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.1.1 (Org mode 9.0.6)
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+HTML_HEAD:
+#+HTML_HEAD_EXTRA:
+#+SUBTITLE:
+#+INFOJS_OPT:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 9.0.6)
+#+LATEX_HEADER:
+
+* Introduciton
+This library defines convenience functions for users to adapt their
+images for use with SeamstressJS and adapt the output of SeamstressJS
+to useful real world images.
+
+* TODOs
+** TODO [#C] Implement JPEG Support
+Adapters should be able to receive a JPEG from clients and convert it
+to a Data URI and it should also be able to produce a JPEG Data URI.
+** TODO [#C] Implement BMP Support
+Adapters should be able to receive a BMP from clients and convert it
+to a Data URI and it should also be able to produce a BMP Data URI.
+** TODO [#C] Implement Input Method
+Adapters should be able to receive an arbitrary image and convert it
+into a Data URI so that it can be submitted to core for resizing.
+** TODO [#A] Implement Output Method
+Adaptors should be able to produce an viewable image from a Data URI
+and target definition.
