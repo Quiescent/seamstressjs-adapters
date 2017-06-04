@@ -7,7 +7,7 @@
     "test": "node node_modules/madge/bin/cli.js --circular --extensions js src/ && nyc --reporter=html --reporter=text mocha test/**/*.js && jscs src && jscs test",
     "build": "webpack --config webpack.config.js",
     "next-update": "next-update -k true --tldr",
-    "release:minor": "release-it preminor --prereleaseId=\"alpha\" --debug"
+    "release:minor": "release-it preminor --prereleaseId=\"alpha\""
   },
   "engineStrict": true,
   "engines": {
