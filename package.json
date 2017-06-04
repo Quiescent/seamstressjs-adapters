@@ -1,12 +1,13 @@
 {
   "name": "seamstressjs-adapters",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha.0",
   "description": "Image adapters for SeamstressJS",
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/madge/bin/cli.js --circular --extensions js src/ && nyc --reporter=html --reporter=text mocha test/**/*.js && jscs src && jscs test",
     "build": "webpack --config webpack.config.js",
-    "next-update": "next-update -k true --tldr"
+    "next-update": "next-update -k true --tldr",
+    "release:minor": "release-it preminor --prereleaseId=\"alpha\" --debug"
   },
   "engineStrict": true,
   "engines": {
@@ -25,6 +26,7 @@
     "mocha": "3.2.0",
     "next-update": "1.5.1",
     "nyc": "10.2.0",
+    "release-it": "2.7.3",
     "webpack": "2.5.1"
   },
   "dependencies": {
